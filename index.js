@@ -18,4 +18,8 @@ $(function() {
     $('.shopping-list').on('click', '.shopping-item-delete', function(event) {
         $(this).parent().parent().remove();
     });
+
+    $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
+        $(this).parent().parent().children('.shopping-item').toggleClass('shopping-item__checked')
+    })
 })
