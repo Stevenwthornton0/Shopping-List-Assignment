@@ -2,8 +2,7 @@ $(function() {
     $('#js-shopping-list-form').submit(event => {
         event.preventDefault();
         const item = $('input').val();
-        const results = [];
-        result.push($(`<li>
+        $('.shopping-list').append($(`<li>
         <span class="shopping-item">${item}</span>
         <div class="shopping-item-controls">
           <button class="shopping-item-toggle">
@@ -13,7 +12,8 @@ $(function() {
             <span class="button-label">delete</span>
           </button>
         </div>
-      </li>`))
-        $('.shopping-list').append(results);
+      </li>`));
     })
+
+    
 })
